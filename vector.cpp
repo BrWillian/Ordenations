@@ -29,7 +29,7 @@ void vector::printVector(int *v, int n)
     for (int i=0; i<n; i++)
     {
         std::cout<<v[i];
-        if(i==n)
+        if(i==n-1)
         {
             std::cout<<std::endl;
         }else {

@@ -13,19 +13,19 @@ int main()
     std::cout<<"--------------------------------------------------------"<<std::endl;
     int *v = vector::generateVector(100000);
 
-    std::cout<<"Bubble Sort"<<std::endl;
+    std::cout<<"BubbleSort"<<std::endl;
     vector::calcExecutionTime(std::bind(&Ordenation::bubbleSort, *ord, v, 100000));
 
     std::cout<<"--------------------------------------------------------"<<std::endl;
     v = vector::generateVector(100000);
 
-    std::cout<<"Selection Sort"<<std::endl;
+    std::cout<<"SelectionSort"<<std::endl;
 
     vector::calcExecutionTime(std::bind(&Ordenation::selectionSort, *ord, v, 100000));
 
     std::cout<<"--------------------------------------------------------"<<std::endl;
 
-    std::cout<<"Insert Sort"<<std::endl;
+    std::cout<<"InsertSort"<<std::endl;
 
     v = vector::generateVector(100000);
 
@@ -40,8 +40,5 @@ int main()
     vector::calcExecutionTime(std::bind(&Ordenation::quickSort, *ord, v, 0, 100000));
 
     std::cout<<"--------------------------------------------------------"<<std::endl;
-
-
-
 
 }
